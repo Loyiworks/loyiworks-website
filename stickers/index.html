@@ -1,0 +1,15 @@
+---
+layout: default
+title: Stickers
+---
+
+<div class="container contentBlock">
+  <h1 class="subpage-titles">Stickers</h1>
+  <ul>
+    {% for post in site.posts %}
+    {% if post.categories contains "stickers" %}
+      <li><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/'  | replace: 'index.html', ''}}">{{ post.title }}</a> ({{post.platform}})</li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+</div>

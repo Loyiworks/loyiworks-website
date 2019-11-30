@@ -1,0 +1,175 @@
+/* Global */
+
+html,
+body {
+  height: 100%;
+}
+
+blockquote {
+  margin-top: 24pt;
+  margin-bottom: 16pt;
+  border-left: solid 2px #6d7e8b;
+  padding-left: 36pt;
+  color: #546470;
+}
+
+.contentBlock {
+  height: 75%;
+}
+
+.centered {
+  margin: auto;
+  text-align: center;
+}
+
+.centerScreened {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  padding-top: 12pt;
+  padding-bottom: 12pt;
+  font-size: 24pt;
+  text-align: center;
+}
+
+.subpage-titles {
+  text-align: center;
+  padding-top: 12pt;
+  padding-bottom: 12pt;
+}
+
+.container {
+    max-width: 800px;
+}
+
+/* Footer */
+
+.footer {
+  padding-top: 32pt;
+  padding-bottom: 16pt;
+}
+
+.endtext {
+  padding-top: 6pt;
+}
+
+/* Logos */
+
+.logo {
+  background: url("/img/assets/logo.svg") no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  margin: auto;
+}
+
+.logo.huge {
+  width: 100%;
+  max-width: 700px;
+  padding-top: 31%;
+}
+
+/* Contact Buttons */
+
+.twink-contact {
+  text-align: left;
+  color: gray;
+  background-color: whitesmoke;
+  text-decoration: none;
+  font-size: 18pt;
+  width: 38pt;
+  height: 38pt;
+  padding-top: 10pt;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+
+.twink-contact:hover {
+  background-color: gray;
+  color: whitesmoke;
+}
+
+.fa-paypal {
+  padding-left: 12.6pt;
+}
+
+.fa-instagram {
+  padding-left: 11pt;
+}
+
+.fa-envelope {
+  padding-left: 10pt;
+}
+
+.fa-twitter {
+  padding-top: 10.5pt;
+  padding-left: 11pt;
+}
+
+/* Navigation Bar */
+
+.nav-item .active {
+  cursor: default;
+}
+
+.navbar-brand {
+  cursor: default;
+}
+
+.navbar {
+  background-color: #ecf0f1 !important;
+}
+.navbar-nav .nav-link {
+  color: #343a40 !important;
+}
+
+/* Product Page */
+
+.badge {
+  margin: auto;
+  margin-top: 40px;
+}
+
+.badge:hover {
+  opacity: 0.8;
+}
+
+.badge.ios {
+  width: 150px;
+  height: 50px;
+  background: url(/img/products/apple/appstore.svg) no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.badge.mac {
+  width: 200px;
+  height: 50px;
+  background: url(/img/products/apple/macappstore.svg) no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+/* Responsive */
+
+@media (max-width: 576px) {
+  .nav-item {
+    margin: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .nav-item {
+    margin-left: 100px;
+  }
+  
+  .nav-item:first-child {
+    margin-left: -10px;
+  }
+}
