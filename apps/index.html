@@ -5,11 +5,20 @@ title: Apps
 
 <div class="container contentBlock">
   <h1 class="subpage-titles">Apps</h1>
-  <ul>
-    {% for post in site.posts %}
-    {% if post.categories contains "apps" %}
-      <li><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/'  | replace: 'index.html', ''}}">{{ post.title }}</a> ({{post.platform}}) // <a href="{{post.icon}}">Test Icon</a></li>
-    {% endif %}
-    {% endfor %}
-  </ul>
+  <div class="card-deck">
+    {% for post in site.posts %} {% if post.categories contains "apps" %}
+    <a
+      href="{{ post.url | prepend: site.baseurl | replace: '//', '/'  | replace: 'index.html', ''}}"
+    >
+      <div class="card" style="min-width: 360px">
+        <div class="card-body" style="text-align: center;">
+          <div
+            class="appicon"
+            style="background: url({{post.icon}}) no-repeat; background-position: center; background-color: #ecf0f1; background-size: 60% 60%; opacity: 0.9; transform: scale(0.9);"></div>
+          {{ post.title }} ({{post.platform}})
+        </div>
+      </div>
+    </a>
+    {% endif %} {% endfor %}
+  </div>
 </div>
