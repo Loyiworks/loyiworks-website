@@ -8,7 +8,7 @@ title: Apps
   <ul>
     {% for post in site.posts %}
     {% if post.categories contains "apps" %}
-      <li><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/'  | replace: 'index.html', ''}}">{{ post.title }}</a> ({{post.platform}})</li>
+      <li><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/'  | replace: 'index.html', ''}}">{{ post.title }}</a> ({{post.platform}}) // <a href="{{post.icon}}">Test Icon</a></li>
     {% endif %}
     {% endfor %}
   </ul>

@@ -3,21 +3,38 @@ layout: default
 ---
 
 <div class="container">
+  <div
+    class="appicon"
+    style="background: url({{page.icon}}) no-repeat; background-position: center; background-color: #ecf0f1; background-size: 60% 60%; opacity: 0.9; transform: scale(0.9); transition: all 0.4s ease-in-out;"
+  ></div>
+  <div style="text-align: center;;">
     <h1>{{ page.title }}</h1>
-    {{ content }}
+    <i>{{ page.subtitle }}</i>
+  </div>
+  <hr />
+
+  {{ content }}
 </div>
 
 {% if page.line-link %}
-<div style="text-align: center;"><a href={{page.line-link}}><button type="button" class="btn btn-success">Download for LINE</button></a></div>
+<div style="text-align: center;">
+  <a href="{{page.line-link}}"
+    ><button type="button" class="btn btn-success">Download for LINE</button></a
+  >
+</div>
+{% endif %} {% if page.mac-link %}
+<div style="text-align: center;">
+  <a href="{{page.mac-link}}" target="_blank"><div class="badge mac"></div></a>
+</div>
+{% endif %} {% if page.ios-link %}
+<div style="text-align: center;">
+  <a href="{{page.ios-link}}" target="_blank"><div class="badge ios"></div></a>
+</div>
 {% endif %}
 
-{% if page.mac-link %}
-<div style="text-align: center;"><a href="{{page.mac-link}}" target="_blank"><div class="badge mac"> </div></a></div>
-{% endif %}
-
-{% if page.ios-link %}
-<div style="text-align: center;"><a href="{{page.ios-link}}" target="_blank"><div class="badge ios"> </div></a></div>
-{% endif %}
-
-<br/><br/>
-<div style="text-align: center;"><a href="/{{page.categories}}"><button type="button" class="btn btn-success">Go Back</button></a></div>
+<br /><br />
+<div style="text-align: center;">
+  <a href="/{{page.categories}}"
+    ><button type="button" class="btn btn-success">Go Back</button></a
+  >
+</div>

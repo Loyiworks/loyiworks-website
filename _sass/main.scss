@@ -30,9 +30,12 @@ blockquote {
 }
 
 h1 {
-  padding-top: 12pt;
-  padding-bottom: 12pt;
   font-size: 24pt;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding-top: 12pt;
+  padding-bottom: 6pt;
   text-align: center;
 }
 
@@ -154,6 +157,16 @@ h1 {
   background: url(/img/products/apple/macappstore.svg) no-repeat;
   background-size: 100% 100%;
   background-position: center;
+}
+
+/* Product Icons */
+
+.appicon {
+  max-width: 200px;
+  height: 200px;
+  width: 100%;
+  border-radius: 300px;
+  margin: auto;
 }
 
 /* Responsive */
