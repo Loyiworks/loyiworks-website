@@ -5,7 +5,7 @@ title: Stickers
 
 <div class="container contentBlock">
   <h1 class="subpage-titles">Stickers</h1>
-  <div class="card-deck">
+  <div class="card-group">
     {% for post in site.posts %} {% if post.categories contains "stickers" %}
     <a
       href="{{ post.url | prepend: site.baseurl | replace: '//', '/'  | replace: 'index.html', ''}}"
@@ -15,7 +15,7 @@ title: Stickers
           <div
             class="appicon"
             style="background: url({{post.icon}}) no-repeat; background-position: center; background-color: #ecf0f1; transform: scale(0.9);background-size: 100% 100%; background-position-y: 35px;background-size: 100% 100%; background-position-y: 35px;"></div>
-          {{ post.title }} ({{post.platform}})
+          {{ post.title }}<br><small>{{post.platform}}</small>
         </div>
       </div>
     </a>
