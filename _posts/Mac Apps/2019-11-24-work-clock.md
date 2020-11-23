@@ -8,7 +8,7 @@ icon:  /img/products/appicon/workclock.svg
 mac-link: https://apps.apple.com/app/work-clock/id1341301632
 ---
 
-You sit on your chair and faced with your computer. What next? A 40, 50, 60, or endless time reading the files or working on your video---or what exactly is the time you spend on your work. Yes, you may have a watch or something reminding your to get up every now and then, but you may not have one!
+You sit on your chair and faced with your computer. What next? A 40, 50, 60, or endless time reading the files or working on your video---or what exactly is the time you spend on your work. Yes, you may have a watch or something reminding you to get up every now and then, but you may not have one!
 
 This is where this app comes in.
 
