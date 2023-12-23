@@ -26,17 +26,12 @@ layout: default
   {{ content }}
 </div>
 
-{% if page.line-link %}
-<div style="text-align: center;">
-  <a href="{{page.line-link}}"
-    ><button type="button" class="btn btn-success">Download for LINE</button></a
-  >
-</div>
-{% endif %} {% if page.mac-link %}
+{% if page.mac-link %}
 <div style="text-align: center;">
   <a href="{{page.mac-link}}" target="_blank"><div class="badge mac"> </div></a>
 </div>
-{% endif %} {% if page.ios-link %}
+{% endif %}
+{% if page.ios-link %}
 <div style="text-align: center;">
   <a href="{{page.ios-link}}" target="_blank"><div class="badge ios"> </div></a>
 </div>
